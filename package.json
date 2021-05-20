@@ -9,8 +9,10 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
+    "mongodb": "^3.6.7",
     "mongoose": "^5.12.10",
     "next": "^10.0.0",
+    "next-connect": "^0.10.1",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
     "react": "17.0.1",
