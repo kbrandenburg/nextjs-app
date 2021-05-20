@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>Hello, I'm Keith. I am a web developer. I like { }
-          <Link href="/posts/first-post"><a>Rocket League</a></Link>.</p>
+          <Link href="/posts/first-post"><a className="text-blue-600">Rocket League</a></Link>.</p>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
