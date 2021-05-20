@@ -60,7 +60,7 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <main className="flex flex-col items-center justify-center min-h-screen py-2">{children}</main> 
+      <main className="flex flex-col min-h-screen py-2">{children}</main> 
       {/*<main>{children}</main> */}
       {!home && (
         <div className={styles.backToHome}>
