@@ -60,12 +60,11 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <main className="flex flex-col min-h-screen py-2">{children}</main> 
-      {/*<main>{children}</main> */}
+      <main className="flex flex-col py-2">{children}</main> 
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
-            <a>← Back to home</a>
+            <a className="text-blue-600">← Back to home</a>
           </Link>
         </div>
       )}

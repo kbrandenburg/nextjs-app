@@ -1,9 +1,9 @@
 import { MongoClient } from 'mongodb';
 import nextConnect from 'next-connect';
 
-let connectionString = "mongodb://localhost"
-//const client = new MongoClient({connectionString}, {
-const client = new MongoClient('{mongodb://localhost:27017}', {
+let connectionString = `mongodb://localhost`
+  //DO NOT POST SECRETS IN THIS FILE, USE DOTENV
+  const client = new MongoClient( connectionString, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
