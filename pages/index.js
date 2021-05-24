@@ -24,6 +24,7 @@ export default function Home({ allPostsData }) {
       <section className={utilStyles.headingMd}>
         <p>Hello, I'm Keith. I am a web developer. I like { }
           <Link href="/posts/first-post"><a className="text-blue-600">Rocket League</a></Link>.</p>
+        <p><Link href="/posts/todo"><a>Todo list</a></Link></p>
       </section>
       
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>

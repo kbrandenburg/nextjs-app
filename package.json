@@ -10,6 +10,7 @@
   "dependencies": {
     "date-fns": "^2.21.3",
     "gray-matter": "^4.0.3",
+    "image-thumbnail": "^1.0.13",
     "mongodb": "^3.6.7",
     "mongoose": "^5.12.10",
     "next": "^10.0.0",
@@ -23,6 +24,6 @@
     "tailwindcss": "^2.1.2"
   },
   "comments": {
-    "dev debug" : "NODE_OPTIONS='--inspect' next dev"
+    "dev debug": "NODE_OPTIONS='--inspect' next dev"
   }
 }
