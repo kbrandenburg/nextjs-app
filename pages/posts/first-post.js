@@ -1,7 +1,7 @@
 import Layout from '../../components/layout'
 import Link from 'next/link'
 import Head from 'next/head'
-
+//console.log(process.env)
 export default function FirstPost() {
     return (
         <Layout>

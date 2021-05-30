@@ -7,14 +7,24 @@
     "build": "next build",
     "start": "next start"
   },
+  "husky": {
+    "hooks": {
+      "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
+      "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
+      "post-applypatch": "echo \"[Husky] post-applypatch\"",
+      "pre-commit": "echo \"[Husky] pre-commit\""
+    }
+  },
   "dependencies": {
-    "date-fns": "^2.21.3",
+    "date-fns": "^2.22.1",
     "gray-matter": "^4.0.3",
+    "husky": "^6.0.0",
     "image-thumbnail": "^1.0.13",
-    "mongodb": "^3.6.7",
-    "mongoose": "^5.12.10",
-    "next": "^10.0.0",
+    "mongodb": "^3.6.9",
+    "mongoose": "^5.12.12",
+    "next": "^10.2.3",
     "next-connect": "^0.10.1",
+    "npm-scripts": "^1.4.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
     "react": "17.0.1",

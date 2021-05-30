@@ -15,7 +15,7 @@ export default function FirstPost() {
 	    <li>Authentication</li>
 	    <li>Pagination</li>
 	    <li>WYSIWYG editor that writes to mongodb</li>
-	    <li>Fix stupid systemd</li>
+	    <li><strike>Fix stupid systemd</strike></li>
 	    </ol>
 	    </div>
         </Layout>

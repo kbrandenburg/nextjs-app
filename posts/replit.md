@@ -1,6 +1,7 @@
 ---
 title: 'Replit the online ide'
 date: '2021-05-23'
+status: archived
 ---
 Originally I stumbled upon replit.com when I was looking for a free host for node for sharing my apps with friends. I found the tools pretty neat, the online ide with built in version control with ability to pull from github easily was slick. I also checked out glitch.io but I ran into issues with my server randomly not working.
 
