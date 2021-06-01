@@ -1,10 +1,11 @@
 import Layout from '../../components/layout'
 import Link from 'next/link'
 import Head from 'next/head'
-//console.log(process.env)
+
 export default function FirstPost() {
     return (
         <Layout>
+            { console.log(process.env.TEST_VAR) }
             <h1>Rocket League</h1>
             <p>This is my first experiment using the next.js framework.</p>
             <p>I am platinum ranked in rocket league, back when I played 8 hours a day I was approaching diamond 3.</p>
