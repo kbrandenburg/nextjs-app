@@ -24,7 +24,7 @@ export default function handler(req, res) {
             exec(
                 "cd " +
                     process.env.REPO_PATH +
-                    " && git pull && npm install && npm run build && npm run start"
+                    " && git pull && systemctl --user stop nodejs && systemctl --user start nodejs"
             );
             console.log("GitHub Webhook ran successfully");
             res.end();
