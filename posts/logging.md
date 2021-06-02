@@ -1,12 +1,9 @@
 ---
 title: 'Logging'
 date: '2021-06-01'
-status: new
+status: modified
 ---
 
-I was dinking around with the logging of systemd using journalctl and realized my console.log was not appearing. I tried to make it work but as I investigated the issue it dawned on me that we do not want to capture console.log on a production system. Major security issue. 
+Trying to capture logs for a systemd process was weird. Many things were being ignored. I ended up setting up the .service to write to file outs which solved most my issues. I also ran into a lot of problems getting environment variables to work with systemd. I ended up using full path to node in my exec statements. 
 
-I also found it interesting how I could not log environment variables, I tried logging process.env.REPO_PATH and got undefined. This is a good thing from a security standpoint, if I accidentally left logging enabled on a production environment someone could see a secret like database connection or github api secret or something else. 
-
-Journalctl does capture major events like when the server was started and I think it will print out exceptions to a degree.
-
+I finally discovered I could use Environment: statements to add environment variables, which is how I setup my secret for github api and my repo path. 
