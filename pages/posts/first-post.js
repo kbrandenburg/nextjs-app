@@ -8,7 +8,8 @@ export default function FirstPost() {
             { console.log(process.env.TEST_VAR) }
             <h1>Rocket League</h1>
             <p>This is my first experiment using the next.js framework.</p>
-            <p>I am platinum ranked in rocket league, back when I played 8 hours a day I was approaching diamond 3.</p>
+            <p>I am platinum 1 ranked in rocket league. A little bit rusty, I took quite the break. Hoping to get back to Plat 3 at least soon.</p>
+            <p>I am using the amazon luna controller, it is pretty nice. The xbox one controllers never last me more than a few months. Maybe I get too excited when I play.</p>
             <p>Not super stoked about EPIC games acquiring psyonix.</p>
         </Layout>
     )
