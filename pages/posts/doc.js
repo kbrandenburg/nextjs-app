@@ -15,10 +15,11 @@ export default function FirstPost() {
                 <Link href="https://www.tutorialspoint.com/nodejs/nodejs_response_object.htm">
                   <a>Good writeup on the response object</a>
                 </Link>
+              </li>
+              <li>
                 <Link href="http://bluebirdjs.com/docs/api/promise.promisify.html">
                   <a>Promisify, an alternative to callbacks</a>
                 </Link>
-              
               </li>
             </ul>
         </Layout>
