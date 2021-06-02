@@ -6,7 +6,4 @@ status: new
 
 We have liftoff! Now when I push to my github repository, github will send a request to my api which will trigger a pull and rebuild. Testing with this post!
 
-Hmmm. Something appeared to have went wrong. Guess after this test fails I will just test the exec portion of the code.
-
-It looks like its timing out. Maybe my secret didnt refresh so I am trying to restart nodeservice.
-
+Required several more tweaks to get it fully working, also I realized at one point I couldnt use the stop command and then start because node couldn't continue deployment after stopping haha. I switched systemctl from --user back to regular system .service at one point in diagnosing the issue, I may look into making it run as regular user again.

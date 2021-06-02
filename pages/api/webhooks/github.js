@@ -1,6 +1,8 @@
 // pages/api/webhooks/github.js
 const { exec } = require("child_process");
 const crypto = require("crypto");
+const util = require("util");
+const command = "cd " + process.env.REPO_PATH +" && systemctl restart node";
 
 // Handle GitHub Webhooks
 export default function handler(req, res) {
@@ -16,16 +18,20 @@ export default function handler(req, res) {
                 .createHmac("sha256", process.env.WEBHOOKS_SECRET)
                 .update(JSON.stringify(req.body))
                 .digest("hex");
+
+	console.log("sig=" + sig)
+	console.log("git=" + req.headers["x-hub-signature-256"])
         if (
             req.headers["x-hub-signature-256"] === sig &&
             req.body?.ref === "refs/heads/main" &&
             process.env.REPO_PATH
         ) {
-            exec(
-                "cd " +
-                    process.env.REPO_PATH +
-                    " && git pull && systemctl --user stop nodejs && systemctl --user start nodejs"
-            );
+            exec(command, (err, stdout, stderr) => {
+              console.log(stdout)
+              console.log(err)
+              console.log(stderr)
+            })
+
             console.log("GitHub Webhook ran successfully");
             res.end();
             return;
