@@ -10,8 +10,8 @@ export default function FirstPost() {
             </Head>
             <h1>TODO list</h1>
             <div><ol>
-	    <li>Use env to hold database connection so we can secure it before deploying to production</li>
-	    <li>Setup github hook for replit magic</li>
+	    <li><strike>Use env to hold database connection so we can secure it before deploying to production</strike></li>
+	    <li><strike>Setup github hook for replit magic</strike></li>
 	    <li>Authentication</li>
 	    <li>Pagination</li>
 	    <li>WYSIWYG editor that writes to mongodb</li>
