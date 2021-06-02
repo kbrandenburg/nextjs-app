@@ -6,3 +6,5 @@ status: new
 
 We have liftoff! Now when I push to my github repository, github will send a request to my api which will trigger a pull and rebuild. Testing with this post!
 
+Hmmm. Something appeared to have went wrong. Guess after this test fails I will just test the exec portion of the code.
+
