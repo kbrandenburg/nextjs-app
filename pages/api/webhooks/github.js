@@ -2,7 +2,7 @@
 const { exec } = require("child_process");
 const crypto = require("crypto");
 const util = require("util");
-const command = "cd " + process.env.REPO_PATH +" && git pull && systemctl restart node";
+const command = "cd " + process.env.REPO_PATH +" && git checkout -f && systemctl restart node";
 
 // Handle GitHub Webhooks
 export default function handler(req, res) {
