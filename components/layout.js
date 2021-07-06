@@ -68,6 +68,34 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <footer className="padding100px headinglarge">
+        <div className={utilStyles.footman}>
+        <Link href="https://github.com/kbrandenburg">
+          <a>
+            <Image
+              priority
+              src="/images/github.png"
+              height={50}
+              width={50}
+              alt="Github"
+            />
+          </a>
+        </Link>
+        &nbsp; &nbsp; &nbsp;
+        <Link href="https://twitter.com/comrnander">
+          <a>
+            <Image
+              priority
+              src="/images/twitter2.png"
+              height={50}
+              width={50}
+              alt="Twitter"
+            />
+          </a>
+        </Link>
+        </div>
+      </footer>
     </div>
+    
   )
 }

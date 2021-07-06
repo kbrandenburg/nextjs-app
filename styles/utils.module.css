@@ -36,6 +36,11 @@
   .padding1px {
     padding-top: 1px;
   }
+
+  .footman {
+    padding-top: 10px;
+    text-align: center;
+  }
   
   .list {
     list-style: none;
