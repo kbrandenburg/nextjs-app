@@ -60,23 +60,14 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <main className="flex flex-col py-2">{children}</main> 
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a className="text-blue-600">← Back to home</a>
-          </Link>
-        </div>
-      )}
-      <footer className="padding100px headinglarge">
-        <div className={utilStyles.footman}>
+      <div className={utilStyles.footman}>
         <Link href="https://github.com/kbrandenburg">
           <a>
             <Image
               priority
               src="/images/github.png"
-              height={50}
-              width={50}
+              height={35}
+              width={35}
               alt="Github"
             />
           </a>
@@ -87,13 +78,23 @@ export default function Layout({ children, home }) {
             <Image
               priority
               src="/images/twitter2.png"
-              height={50}
-              width={50}
+              height={35}
+              width={39}
               alt="Twitter"
             />
           </a>
         </Link>
         </div>
+      <main className="flex flex-col py-2">{children}</main> 
+      {!home && (
+        <div className={styles.backToHome}>
+          <Link href="/">
+            <a className="text-blue-600">← Back to home</a>
+          </Link>
+        </div>
+      )}
+      <footer className="padding100px headinglarge">
+        
       </footer>
     </div>
     
