@@ -2,6 +2,10 @@ import Layout from '../../components/layout'
 import Link from 'next/link'
 import Head from 'next/head'
 
+//confirmed pages do not run serverside
+//would need to use getStatic or whatever
+//const fs = require('fs')
+
 export default function FirstPost() {
     return (
         <Layout>

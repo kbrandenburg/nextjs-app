@@ -93,8 +93,8 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
-      <footer className="padding100px headinglarge">
-        
+      <footer className={utilStyles.footman}>
+        Powered by next.js
       </footer>
     </div>
     
